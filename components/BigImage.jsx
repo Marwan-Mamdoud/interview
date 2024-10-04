@@ -10,7 +10,7 @@ const BigImage = () => {
         rel="stylesheet"
       />
       <img
-        src="/assits/bigImage.webp"
+        src="/assits/bigimage.webp"
         className="lg:object-cover object-contain lg:w-3/5 w-full h-fit lg:h-[120dvh]"
       />
       <div className="bg-[#647d8b] lg:w-2/5 lg:h-[120dvh] h-[80dvh] w-full text-lg flex items-center font-medium text-white/70 font-sans  ">
