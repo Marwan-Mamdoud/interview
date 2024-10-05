@@ -28,8 +28,8 @@ const Book = () => {
     );
   }, []);
   return (
-    <div className="book-back-ground relative">
-      <div className="book-content footter absolute w-full bottom-0">
+    <div className=" book-back-ground relative">
+      <div id="book" className="book-content footter absolute w-full bottom-0">
         <p className="text-white/80 uppercase tracking-[.3rem] text-xl pt-16 mb-10 flex items-center justify-center">
           YOUR BALI PARADISE AWAITS
         </p>
@@ -39,23 +39,23 @@ const Book = () => {
               <label htmlFor="Full Name text-white">Name</label>
               <input
                 type="text"
-                className="w-48 h-9 px-3"
+                className="  text-black foucus:border-black w-48 h-9 px-3"
                 placeholder="Full Name"
               />
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="Full Name text-white">Email</label>
               <input
-                type="text"
-                className="w-48 h-9 px-3"
+                type="email"
+                className=" text-black foucus:border-black w-48 h-9 px-3"
                 placeholder="Email Address"
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="Full Name text-white">Number</label>
+              <label htmlFor=" Full Name text-white">Number</label>
               <input
                 type="number"
-                className="w-48 h-9 px-3"
+                className=" text-black foucus:border-black w-48 h-9 px-3"
                 placeholder="Your Number"
               />
             </div>
@@ -66,7 +66,7 @@ const Book = () => {
               <label htmlFor="Full Name text-white">State</label>
               <input
                 type="text"
-                className="w-48 h-9 px-3"
+                className="  text-black    w-48 h-9 px-3"
                 placeholder="Name Of State"
               />
             </div>
@@ -74,17 +74,18 @@ const Book = () => {
               <label htmlFor="Full Name text-white">Rooms</label>
               <input
                 type="number"
-                className="w-48 h-9 px-3"
+                className="  text-black foucus:border-black w-48 h-9 px-3"
                 placeholder="Number of Rooms"
               />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 mb-3">
               <label htmlFor="Full Name text-white">Massage</label>
-              <input
+              <textarea
                 type="text"
-                className="w-48 h-9 px-3"
+                row={5}
+                className="  text-black foucus:border-black w-48 pt-1 pl-2"
                 placeholder="Live us Massage"
-              />
+              ></textarea>
             </div>
           </div>
           <button className="hover:bg-[#354953] duration-500 bg-[#647d8b] py-2.5 px-20 text-xs tracking-wider font-semibold font-sans text-white text-center">

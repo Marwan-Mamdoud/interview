@@ -13,7 +13,7 @@ const Review = () => {
         { opacity: 0 },
         {
           opacity: 1,
-          duration: 1,
+          duration: 3,
           repeat: 1,
           yoyo: true,
         }
@@ -23,7 +23,7 @@ const Review = () => {
         { opacity: 0 },
         {
           opacity: 1,
-          duration: 1,
+          duration: 3,
           repeat: 1,
           yoyo: true,
         }
@@ -31,7 +31,7 @@ const Review = () => {
       .fromTo(
         ".review3",
         { opacity: 0 },
-        { opacity: 1, duration: 1, repeat: 1, yoyo: true }
+        { opacity: 1, duration: 3, repeat: 1, yoyo: true }
       );
 
     timeLinebull
@@ -40,7 +40,7 @@ const Review = () => {
         { backgroundColor: "gray" },
         {
           backgroundColor: "black",
-          duration: 1,
+          duration: 3,
           repeat: 1,
           yoyo: true,
         }
@@ -50,7 +50,7 @@ const Review = () => {
         { backgroundColor: "gray" },
         {
           backgroundColor: "black",
-          duration: 1,
+          duration: 3,
           repeat: 1,
           yoyo: true,
         }
@@ -60,7 +60,7 @@ const Review = () => {
         { backgroundColor: "gray" },
         {
           backgroundColor: "black",
-          duration: 1,
+          duration: 3,
           repeat: 1,
           yoyo: true,
         }

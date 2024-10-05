@@ -1,8 +1,10 @@
 "use client";
+import ModalImage from "react-modal-image";
 import gsap from "gsap";
 import Image from "next/image";
 import React from "react";
 import { useState } from "react";
+import { useRef } from "react";
 
 const Rooms = () => {
   const [hover, setHover] = useState(true);
@@ -10,9 +12,19 @@ const Rooms = () => {
   const [hover3, setHover3] = useState(true);
   const [hover4, setHover4] = useState(true);
   const [hover5, setHover5] = useState(true);
+  const [open, setOpen] = useState();
+  const [open2, setOpen2] = useState();
+  const [open3, setOpen3] = useState();
+  const [open4, setOpen4] = useState();
+  const [open5, setOpen5] = useState();
+  // const model = useRef(null);
+  // const model2 = useRef(null);
+  // const model3 = useRef(null);
+  // const model4 = useRef(null);
+  // const model5 = useRef(null);
   // const hoverEnter = () => {
   //   // // gsap.to(".roomImage", { scale: 2 });
-  //   // gsap.to(".roomBorder", { width: 220, duration: 1 });
+  //   // gsap.to(".", { width: 220, duration: 1 });
   //   // // gsap.set(".rooms-back-ground", {
   //   // //   className: "-=back-ground-image",
   //   // //   duration: 2,
@@ -20,7 +32,7 @@ const Rooms = () => {
   // };
   // const hoverLeave = () => {
   //   // // gsap.to(".roomImage", { scale: 2 });
-  //   // gsap.to(".roomBorder", { width: 50, duration: 1 });
+  //   // gsap.to(".", { width: 50, duration: 1 });
   //   // // gsap.set(".rooms-back-ground", {
   //   // //   className: "+=back-ground-image",
   //   // //   duration: 1,
@@ -40,7 +52,7 @@ const Rooms = () => {
               <p> villa</p>
             </div>
           </div>
-          <div className="flex items-center justify-between gap-0">
+          <div id="rooms" className="flex items-center justify-between gap-0">
             <Image
               src="/assits/icon1.png"
               alt="icon1"
@@ -74,6 +86,9 @@ const Rooms = () => {
             }}
           >
             <div
+              onClick={() => {
+                setOpen(true);
+              }}
               className={`back-ground-image rooms-back-ground transition-all duration-1000  ${
                 !hover && "opacity-0"
               }  w-full h-full absolute z-20`}
@@ -88,11 +103,11 @@ const Rooms = () => {
             />
             <div className={`absolute bottom-0  left-4 h-1/5  z-30 w-full`}>
               <div
-                className={`bg-white h-[1px] roomBorder ${
-                  !hover && "w-full"
-                } transition-all duration-1000 w-2/6`}
+                className={`bg-white h-[1px]  ${
+                  !hover ? "w-10/12" : "w-2/6"
+                } transition-all duration-1000 `}
               />
-              <p className="font-sans uppercase text-lg font-light text-white pt-5 ">
+              <p className="font-sans uppercase text-[12px] tracking-widest  text-white pt-5 ">
                 One badRoom
               </p>
             </div>
@@ -107,6 +122,9 @@ const Rooms = () => {
             }}
           >
             <div
+              onClick={() => {
+                setOpen2(true);
+              }}
               className={`back-ground-image rooms-back-ground transition-all duration-1000  ${
                 !hover2 && "opacity-0"
               }  w-full h-full absolute z-20`}
@@ -121,11 +139,11 @@ const Rooms = () => {
             />
             <div className={`absolute bottom-0  left-4 h-1/5  z-30 w-full`}>
               <div
-                className={`bg-white h-[1px] roomBorder ${
-                  !hover2 && "w-full"
-                } transition-all duration-1000 w-2/6`}
+                className={`bg-white h-[1px]  ${
+                  !hover2 ? "w-10/12" : "w-2/6"
+                } transition-all duration-1000`}
               />
-              <p className="font-sans uppercase text-lg font-light text-white pt-5 ">
+              <p className="font-sans uppercase text-[12px] tracking-widest  text-white pt-5 ">
                 Two badRoom
               </p>
             </div>
@@ -140,6 +158,9 @@ const Rooms = () => {
             }}
           >
             <div
+              onClick={() => {
+                setOpen3(true);
+              }}
               className={`back-ground-image rooms-back-ground transition-all duration-1000  ${
                 !hover3 && "opacity-0"
               }  w-full h-full absolute z-20`}
@@ -154,11 +175,11 @@ const Rooms = () => {
             />
             <div className={`absolute bottom-0  left-4 h-1/5  z-30 w-full`}>
               <div
-                className={`bg-white h-[1px] roomBorder ${
-                  !hover3 && "w-full"
-                } transition-all duration-1000 w-2/6`}
+                className={`bg-white h-[1px]  ${
+                  !hover3 ? "w-10/12" : "w-2/6"
+                } transition-all duration-1000 `}
               />
-              <p className="font-sans uppercase text-lg font-light text-white pt-5 ">
+              <p className="font-sans uppercase text-[12px] tracking-widest  text-white pt-5 ">
                 three badRoom
               </p>
             </div>
@@ -173,6 +194,9 @@ const Rooms = () => {
             }}
           >
             <div
+              onClick={() => {
+                setOpen4(true);
+              }}
               className={`back-ground-image rooms-back-ground transition-all duration-1000  ${
                 !hover4 && "opacity-0"
               }  w-full h-full absolute z-20`}
@@ -187,11 +211,11 @@ const Rooms = () => {
             />
             <div className={`absolute bottom-0  left-4 h-1/5  z-30 w-full`}>
               <div
-                className={`bg-white h-[1px] roomBorder ${
-                  !hover4 && "w-full"
-                } transition-all duration-1000 w-2/6`}
+                className={`bg-white h-[1px]  ${
+                  !hover4 ? "w-10/12" : "w-2/6"
+                } transition-all duration-1000 `}
               />
-              <p className="font-sans uppercase text-lg font-light text-white pt-5 ">
+              <p className="font-sans uppercase text-[12px] tracking-widest  text-white pt-5 ">
                 four badRoom
               </p>
             </div>
@@ -206,10 +230,14 @@ const Rooms = () => {
             }}
           >
             <div
+              onClick={() => {
+                setOpen5(true);
+              }}
               className={`back-ground-image rooms-back-ground transition-all duration-1000  ${
                 !hover5 && "opacity-0"
               }  w-full h-full absolute z-20`}
             ></div>
+
             <Image
               fill
               src="/assits/Resort (5).webp"
@@ -220,17 +248,87 @@ const Rooms = () => {
             />
             <div className={`absolute bottom-0  left-4 h-1/5  z-30 w-full`}>
               <div
-                className={`bg-white h-[1px] roomBorder ${
-                  !hover5 && "w-full"
-                } transition-all duration-1000 w-2/6`}
+                className={`bg-white h-[1px]  ${
+                  !hover5 ? "w-10/12" : "w-2/6"
+                } transition-all duration-1000 `}
               />
-              <p className="font-sans uppercase text-lg font-light text-white pt-5 ">
+              <p className="font-sans uppercase text-[12px] tracking-widest  text-white pt-5 ">
                 five badRoom
               </p>
             </div>
           </div>
         </div>
-        <button className="bg-white py-3 mt-16 hover:bg-[#394145] hover:text-white transition-all duration-700  px-6 mx-auto font-sans uppercase font-normal text-[10px] border-black/60 border-2 tracking-[.2rem] text-black">
+        {open5 && (
+          <div
+            onClick={() => setOpen5(false)}
+            className="fixed inset-0 z-30 items-center justify-center flex backdrop-blur-sm"
+          >
+            <Image
+              src="/assits/Resort (5).webp"
+              alt="image"
+              width={999}
+              height={999}
+              className="w-fit  object-cover h-fit"
+            />
+          </div>
+        )}
+        {open4 && (
+          <div
+            onClick={() => setOpen4(false)}
+            className="fixed inset-0 z-30 items-center justify-center flex backdrop-blur-sm"
+          >
+            <Image
+              src="/assits/Resort (4).webp"
+              alt="image"
+              width={999}
+              height={999}
+              className="w-fit  object-cover h-fit"
+            />
+          </div>
+        )}
+        {open3 && (
+          <div
+            onClick={() => setOpen3(false)}
+            className="fixed inset-0 z-30 items-center justify-center flex backdrop-blur-sm"
+          >
+            <Image
+              src="/assits/Resort (3).webp"
+              alt="image"
+              width={999}
+              height={999}
+              className="w-fit  object-cover h-fit"
+            />
+          </div>
+        )}
+        {open2 && (
+          <div
+            onClick={() => setOpen2(false)}
+            className="fixed inset-0 z-30 items-center justify-center flex backdrop-blur-sm"
+          >
+            <Image
+              src="/assits/Resort (2).webp"
+              alt="image"
+              width={999}
+              height={999}
+              className="w-fit  object-cover h-fit"
+            />
+          </div>
+        )}
+        {open && (
+          <div
+            onClick={() => setOpen(false)}
+            className="fixed inset-0 z-30 items-center justify-center flex backdrop-blur-sm"
+          >
+            <Image
+              src="/assits/Resort (1).webp"
+              alt="image"
+              width={999}
+              height={999}
+              className="w-fit  object-cover h-fit"
+            />
+          </div>
+        )}
+        <button className="bg-white hidden py-3 mt-16 hover:bg-[#394145] hover:text-white transition-all duration-700  px-6 mx-auto font-sans uppercase font-normal text-[10px] border-black/60 border-[1px] tracking-[.2rem] text-black">
           EXPLORE ALL Villas
         </button>
       </div>

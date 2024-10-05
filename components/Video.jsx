@@ -10,7 +10,7 @@ const Video = () => {
   const [isOpen, setIsOpen] = useState();
 
   return (
-    <div className="bg-[#f7f5f2] lg:w-11/12 h-[140dvh] mx-auto flex lg:flex-row flex-col items-center justify-center  mt-36 ">
+    <div className="bg-[#f7f5f2] lg:w-11/12 h-[140dvh] mx-auto relative flex lg:flex-row flex-col-reverse items-center justify-center  mt-36 ">
       <div
         onMouseLeave={() => {
           setHover(true);
@@ -18,8 +18,21 @@ const Video = () => {
         onMouseEnter={() => {
           setHover(false);
         }}
-        className="lg:w-[40dvw] lg:h-[83dvh]  lg:absolute lg:right-64 "
+        className="lg:w-[40dvw] lg:h-[83dvh]  translate-x-0  lg:translate-x-1/3 "
       >
+        <div className="lg:w-[380px] h-[300px] w-full py-5 flex flex-col  items-center justify-evenly bg-white  font-sans text-[#394145] lg:absolute lg:-translate-x-2/3 translate-x-0 lg:translate-y-1/2 lg:z-30">
+          <p className="text-[10px]  tracking-[.2rem] uppercase font-semibold">
+            Customer
+          </p>
+          <p className=" uppercase tracking-[.4rem] text-2xl ">IS SUPREME</p>
+          <p className="w-3/4 text-center text-lg">
+            When it comes to our guests, no request is too big and no detail is
+            too small.
+          </p>
+          <button className="bg-[#394145] uppercase hidden text-white py-3 font-semibold mb-5 px-6 rounded-sm text-[9px] border-[1px] border-[#394145] tracking-[.2rem] hover:bg-white hover:text-[#394145] duration-700">
+            learn more
+          </button>
+        </div>
         <img
           src="/assits/chif.webp"
           alt="chif"
@@ -27,6 +40,7 @@ const Video = () => {
           fill
           className={`w-full lg:h-full  h-[300px]  cursor-pointer  duration-300 object-center lg:object-cover`}
         />
+
         <ModalVideo
           channel="vimeo"
           isOpen={isOpen}
@@ -47,19 +61,6 @@ const Video = () => {
             alt="play"
           />
         </div>
-      </div>
-      <div className="lg:w-[380px] h-[300px] w-full  flex flex-col  items-center justify-evenly bg-white font-sans text-[#394145] lg:absolute lg:right-[750px] lg:z-30">
-        <p className="text-[10px] mt-7 tracking-[.2rem] uppercase font-semibold">
-          Customer
-        </p>
-        <p className=" uppercase tracking-[.4rem] text-2xl ">IS SUPREME</p>
-        <p className="w-3/4 text-center text-lg">
-          When it comes to our guests, no request is too big and no detail is
-          too small.
-        </p>
-        <button className="bg-[#394145] uppercase text-white py-3 font-semibold mb-5 px-6 rounded-sm text-[9px] border-2 border-[#394145] tracking-[.2rem] hover:bg-white hover:text-[#394145] duration-700">
-          learn more
-        </button>
       </div>
     </div>
   );

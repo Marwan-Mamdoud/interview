@@ -55,52 +55,52 @@ const Images = () => {
     <div className="fullDev  flex items-center justify-center gap-5 lg:mt-28 pt-20 lg:w-9/12 w-full px-2 mx-auto mb-52">
       <div className="relative flex flex-col gap-10">
         <img
-          src="/assits/section1.jpg"
+          src="/assits/Resort (1).webp"
           alt="imges"
           className="object-cover w-fit h-fit"
         />
         <img
-          src="/assits/section2.jpg"
+          src="/assits/Resort (2).webp"
           alt="imges"
           className="object-cover w-fit h-fit"
         />
       </div>
       <div className="relative imageSpesial flex flex-col gap-10">
         <img
-          src="/assits/section3.jpg"
+          src="/assits/Resort (3).webp"
           alt="imges"
           className="object-cover w-fit h-fit"
         />
         <img
-          src="/assits/section4.jpg"
+          src="/assits/Resort (4).webp"
           alt="imges"
           className="object-cover w-fit h-fit"
         />
       </div>
       <div className="relative flex flex-col gap-10">
-        <img src="/assits/section5.jpg" alt="imges" />
-        <img src="/assits/section6.jpg" alt="imges" />
+        <img src="/assits/Resort (5).webp" alt="imges" />
+        <img src="/assits/Resort (1).webp" alt="imges" />
       </div>
       <div className="relative imageSpesial flex flex-col gap-10">
         <img
-          src="/assits/section7.jpg"
+          src="/assits/Resort (2).webp"
           alt="imges"
           className="object-cover w-fit h-fit"
         />
         <img
-          src="/assits/section8.jpg"
+          src="/assits/Resort (3).webp"
           alt="imges"
           className="object-cover w-fit h-fit"
         />
       </div>
       <div className="relative flex flex-col gap-10">
         <img
-          src="/assits/section9.jpg"
+          src="/assits/Resort (4).webp"
           alt="imges"
           className="object-cover w-fit h-fit"
         />
         <img
-          src="/assits/section10.jpg"
+          src="/assits/Resort (5).webp"
           alt="imges"
           className="object-cover w-fit h-fit"
         />

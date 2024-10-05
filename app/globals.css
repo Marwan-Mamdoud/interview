@@ -19,6 +19,12 @@
   background-color: rgba(32, 44, 51, 0.7);
 }
 
+.link {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .icon {
   speak: none;
   font-variant: normal;
@@ -37,7 +43,7 @@
 
 .book-back-ground {
   background-image: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)),
-    url(https://cdn.prod.website-files.com/6685ced14b48766bcdc1b226/6686a865ccad8829e3516f3a_1.webp);
+    url("./../public/assits/Resort\ \(5\).webp");
   background-position: 0 0, 50%;
   background-size: auto, cover;
   flex-flow: column;

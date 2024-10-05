@@ -2,7 +2,10 @@ import React from "react";
 
 const BigImage = () => {
   return (
-    <div className="w-full flex items-center lg:flex-row flex-col text-center text-white mb-44">
+    <div
+      className="w-full flex items-center lg:flex-row flex-col text-center text-white mb-44"
+      id="about"
+    >
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
@@ -10,7 +13,7 @@ const BigImage = () => {
         rel="stylesheet"
       />
       <img
-        src="/assits/bigimage.webp"
+        src="/assits/Resort (4).webp"
         className="lg:object-cover object-contain lg:w-3/5 w-full h-fit lg:h-[120dvh]"
       />
       <div className="bg-[#647d8b] lg:w-2/5 lg:h-[120dvh] h-[80dvh] w-full text-lg flex items-center font-medium text-white/70 font-sans  ">
@@ -28,7 +31,7 @@ const BigImage = () => {
             grace of it’s beautiful location of Uluwatu makes staying at Hidden
             Hills Villas an experience unto its own.
           </p>{" "}
-          <button className="py-2 px-6 uppercase border-[1px] border-white/90 text-white/90 bg-[#647d8b] hover:bg-white hover:text-[#647d8b] duration-500 text-[10px] tracking-[.2rem]">
+          <button className="py-2 px-6 hidden uppercase border-[1px] border-white/90 text-white/90 bg-[#647d8b] hover:bg-white hover:text-[#647d8b] duration-500 text-[10px] tracking-[.2rem]">
             {" "}
             our story
           </button>

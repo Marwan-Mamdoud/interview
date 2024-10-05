@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import { send } from "@/action/sendEmail";
 
 const Footer = () => {
   return (
@@ -11,34 +13,37 @@ const Footer = () => {
         <input
           type="text"
           placeholder="Enter Your Email"
-          className="px-4 relative w-4/5 py-4   lg:w-1/3 bg-[#647d8b] border-[1px] active:border-black border-white/60"
+          className="px-4 relative w-4/5 py-4   lg:w-1/3 bg-[#647d8b] border-[.5px] outline-none focus:border-black duration-700 border-white/60"
         />{" "}
-        <button className="bg-[#566c79] py-3 px-10 lg:w-[250px] lg:-translate-x-[110%] lg:translate-y-0 translate-x-[36%] -translate-y-[160%]  z-10  uppercase text-sm  tracking-widest">
+        <button
+          onClick={send}
+          className="bg-[#566c79] py-3 px-8 mr-10 lg:w-[200px] lg:px-2  lg:-translate-x-[115%]  lg:translate-y-0 translate-x-full   -translate-y-[160%]  z-10  uppercase text-sm  tracking-widest"
+        >
           Subscribe now
         </button>
       </div>
       <div className="w-full flex lg:justify-between flex-col lg:mb-0  lg:flex-row lg:w-3/4 lg:mx-auto px-10 items-start">
         <div className="flex-col flex lg:flex-row lg:items-center gap-5  lg:gap-10 mb-10 ">
           <Link
-            href=""
+            href="#about"
             className=" hover:text-black duration-700 text-sm text-white/60 font-sans"
           >
             About us
           </Link>
           <Link
-            href=""
+            href="#rooms"
             className=" hover:text-black duration-700 text-sm text-white/60 font-sans"
           >
             Out Villas
           </Link>
           <Link
-            href=""
+            href="#packages"
             className=" hover:text-black duration-700 text-sm text-white/60 font-sans"
           >
             Packages
           </Link>
           <Link
-            href=""
+            href="#book"
             className=" hover:text-black duration-700 text-sm text-white/60 font-sans"
           >
             Contact
@@ -72,7 +77,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t-[1px] border-white/60 flex lg:w-3/4 w-full   items-center justify-between my-16 lg:mt-0 flex-col lg:flex-row pt-10 gap-10">
-        <p className="text-white/50">© 2022 Noubodiez. All rights reserved</p>
+        <Link href="https://www.noubodiez.ae/" className="text-white/50">
+          © 2022 Noubodiez. All rights reserved
+        </Link>
         <div className="font-medium">
           <Link
             href=""
